@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+:root{
+    --primary-black: #111827;
+    --primary-grey:  #E5E7EB;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+    background-color: var(--primary-grey);  
+    margin: 0 auto;
+}
+
+.navigation{
+   background-color: var(--primary-black);
+   color: var(--primary-grey);
+   height: 5rem;
+   padding-top: 2.5rem;
+   padding-left: 2rem;
+   font-size: large;
+}
+
+.navigation a{
+    padding: 0.5rem 1.8rem;
+    color: var(--primary-grey);
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.header{
+    text-align: center;
+}
+
+.container{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.angle, .length{
+    margin: 0.7rem 0.1rem;
+    padding: 0.5rem;
+    background-color: var(--primary-black);
+    color: var(--primary-grey);
+}
+
+.active{
+    border-bottom-color: var(--primary-grey);
+    border-width: 0.1rem;
+    border-style: solid;
+    border-top-color: var(--primary-black);
+    border-right-color: var(--primary-black);
+    border-left-color: var(--primary-black);
+    
+}
+
+#istrianglebtn , #submitbtn, #checkbtn{
+    margin-top: 0.4rem;
+    background-color: var(--primary-black);
+    color: var(--primary-grey);
+    padding: 0.6rem;
+    border: var(--primary-grey);
+    border-style: double;
+    border-width: 0.3rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#output{
+    margin: 2rem auto;
+    font-size: large;
+}
+
+
+.questions{
+    border: var(--primary-black);
+    border-radius: 0.2rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    padding: 0.5rem;
+    height: 7rem;
+    margin: 1rem auto;
+}
+
+.formula{
+    border: var(--primary-black);
+    border-radius: 0.2rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+    text-align: center;
+
+}
+
