@@ -11,6 +11,10 @@ function calculateSumOfAngles(angle1, angle2, angle3)
 
 function checkIsTriangle()
 {
+    if(Number(angles[0].value) < 0 || Number(angles[1].value)< 0 ||  Number(angles[2].value)< 0){
+        output.innerText = `Enter Positive Values`;
+    }
+    else{
     var sum = calculateSumOfAngles(angles[0].value, angles[1].value, angles[2].value);
     
     if(sum===180){
@@ -19,6 +23,7 @@ function checkIsTriangle()
     else{
         output.innerText = "No, the angles do not form a triangle!";
     }
+}
 }
 
 

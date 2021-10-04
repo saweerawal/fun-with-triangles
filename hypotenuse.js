@@ -11,9 +11,14 @@ function calculateSumOfSquares(side1, side2)
 
 function checkHypotenuse()
 {
+    if(Number(base.value) < 0 || Number(perpendicular.value)< 0){
+        output.innerText = `Enter Positive Values`;
+    }
+    else{
     var sum= calculateSumOfSquares(Number(base.value), Number(perpendicular.value));
     const hypotenuseLength = Math.sqrt(Number(sum));
     output.innerText = `The length of the hypotenuse is ${hypotenuseLength} cm`;
+    }
 }
 
 
